@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 def simple_delete(my_dict, key=""):
-    dictCopy = dict(my_dict)
-    if key in dictCopy.keys():
-        del(dictCopy[key])
-    return dictCopy
+    if key in my_dict.keys():
+        del(my_dict[key])
+    return my_dict
