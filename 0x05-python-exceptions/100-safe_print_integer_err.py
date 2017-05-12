@@ -3,7 +3,7 @@ def safe_print_integer_err(value):
     import sys
     try:
         print("{:d}".format(value))
-    except (TypeError, ValueError) as err:
+    except Exception as err:
         print(err)
         sys.stderr.write("Exception: " + str(err) + "\n")
         return (False)
