@@ -1,0 +1,25 @@
+4-print_square Module:
+Import the function
+    >>> printSquare = __import__("4-print_square").print_square
+
+Check for Functionalities
+    >>> printSquare(1)
+    #
+
+    >>> printSquare(0)
+    
+    >>> printSquare(4)
+    ####
+    ####
+    ####
+    ####
+
+    >>> printSquare(5.67)
+    Traceback (most recent call last):
+    	      ...
+    TypeError: size must be an integer
+
+    >>> printSquare("holberton")
+    Traceback (most recent call last):
+    	      ...
+    TypeError: size must be an integer
