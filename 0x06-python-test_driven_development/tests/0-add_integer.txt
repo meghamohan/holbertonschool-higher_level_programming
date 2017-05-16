@@ -1,0 +1,30 @@
+The `0-add_integer` Module:
+============================
+
+Check if the file exists
+>>> add_integer = __import__("0-add_integer").add_integer
+>>> fileExists = __import__("0-add_integer").__doc__
+>>> print(len(fileExists) > 0)
+True
+
+>>> addFunction = __import__('0-add_integer').add_integer
+
+Check for addition
+>>> addFunction(5, 6)
+11
+
+>>> addFunction(55.5, 44.6)
+99
+
+>>> addFunction(-2, 10)
+8
+
+>>> addFunction('Holberton', 'School')
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
+
+>>> addFunction(10, "Megha")
+Traceback (most recent call last):
+...
+TypeError: b must be an integer

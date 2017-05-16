@@ -1,0 +1,16 @@
+3-say_my_name Module
+======================
+Import the module
+    >>> printName = __import__("3-say_my_name").say_my_name
+
+Test for functionalities
+    >>> printName("Holberton", "School")
+    My name is Holberton School
+    >>> printName("Battery Street")
+    My name is Battery Street 
+    >>> printName(100, "Holberton")
+    Traceback (most recent call last):
+    TypeError: first_name must be a string
+    >>> printName("Holberton", 98)
+    Traceback (most recent call last):
+    TypeError: last_name must be a string
