@@ -18,8 +18,12 @@ Test for functionalities
     Traceback (most recent call last):
     TypeError: last_name must be a string
 
+    >>> printName("Holberton", )
+    My name is Holberton 
+ 
     >>> printName(None)
     Traceback (most recent call last):
+    ...
     TypeError: first_name must be a string
 
     >>> printName(None, "Holberton")
