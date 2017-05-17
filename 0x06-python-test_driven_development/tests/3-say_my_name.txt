@@ -29,3 +29,7 @@ Test for functionalities
     >>> printName(None, "Holberton")
     Traceback (most recent call last):
     TypeError: first_name must be a string
+
+    >>> printName()
+    Traceback (most recent call last):
+    TypeError: say_my_name() missing 1 required positional argument: 'first_name'
