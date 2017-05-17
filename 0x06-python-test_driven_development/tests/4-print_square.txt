@@ -28,3 +28,8 @@ Check for Functionalities
     Traceback (most recent call last):
     		  ...
     TypeError: print_square() takes 1 positional argument but 2 were given
+
+    >>> printSquare(-1)
+    Traceback (most recent call last):
+    		  ...
+    ValueError: size must be >= 0
