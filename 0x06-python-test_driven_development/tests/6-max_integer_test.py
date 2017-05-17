@@ -17,7 +17,7 @@ class TestMaxInteger(unittest.TestCase):
         list1 = [5, 22, 50, "string"]
         with self.assertRaises(TypeError):
             max_integer(list1)
-'''
+
     def testMaxTest4(self):
         list1 = [5, True, False]
         self.assertEqual(max_integer(list1), 5)
@@ -28,6 +28,29 @@ class TestMaxInteger(unittest.TestCase):
     def testMaxTest6(self):
         with self.assertRaises(TypeError):
             max_integer([None, None])
-'''
+
+    def testMax7(self):
+        list1 = [10, 15, 2, 37]
+        self.assertEqual(max_integer(list1), 37)
+
+
+    def testMax8(self):
+        list1 = [100, 15, 2, 37]
+        self.assertEqual(max_integer(list1), 100)
+
+
+    def testMax9(self):
+        list1 = [10, -15, 2, 37]
+        self.assertEqual(max_integer(list1), 37)
+
+
+    def testMax10(self):
+        list1 = [-10, -15, -2, -37]
+        self.assertEqual(max_integer(list1), -2)
+
+
+    def testMax11(self):
+        list1 = [10]
+        self.assertEqual(max_integer(list1), 10)
 if __name__ == '__main__':
     unittest.main()
