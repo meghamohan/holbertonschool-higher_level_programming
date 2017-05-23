@@ -1,0 +1,28 @@
+``4-square`` module
+------------------------------
+Importing Square class
+------------------------------
+    >>> Square = __import__('4-square').Square
+
+Tetsing Functionalities
+
+    >>> sqr1 = Square()
+    >>> print("{:d}".format(sqr1.size))
+    0
+    >>> print('{}'.format(sqr1.area()))
+    0
+
+    >>> sqr2 = Square(50)
+    >>> sqr2.size = 5
+    >>> print("{:d}".format(sqr2.size))
+    5
+    >>> print('{:d}'.format(sqr2.area()))
+    25
+
+    >>> sqr2.size = "Error"
+    Traceback (most recent call last):
+    TypeError: size must be an integer
+
+    >>> sqr3 = Square(-5)
+    Traceback (most recent call last):
+    ValueError: size must be >= 0
