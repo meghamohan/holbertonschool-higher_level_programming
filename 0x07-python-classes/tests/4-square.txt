@@ -26,3 +26,46 @@ Tetsing Functionalities
     >>> sqr3 = Square(-5)
     Traceback (most recent call last):
     ValueError: size must be >= 0
+
+    >>> sqr4 = Square("error")
+    Traceback (most recent call last):
+    TypeError: size must be an integer
+
+    >>> sqr5 = Square(1)
+    >>> sqr5 = Square(True)
+    Traceback (most recent call last):
+    TypeError: size must be an integer
+
+    >>> sqr5 = Square((1, 2, 3))
+    Traceback (most recent call last):
+    TypeError: size must be an integer
+    >>> sqr5.size = 5
+    >>> sqr5.size = (1, 2, 3)
+    Traceback (most recent call last):
+    TypeError: size must be an integer
+
+    >>> sqr5 = Square([1, 2, 3])
+    Traceback (most recent call last):
+    TypeError: size must be an integer
+    >>> sqr5.size = [1, 2, 3]
+    Traceback (most recent call last):
+    TypeError: size must be an integer
+
+    >>> sqr8 = Square(None)
+    Traceback (most recent call last):
+    TypeError: size must be an integer
+    >>> sqr5.size = None
+    Traceback (most recent call last):
+    TypeError: size must be an integer
+ 
+    >>> sqr7 = Square({1, 2})
+    Traceback (most recent call last):
+    TypeError: size must be an integer
+    >>> sqr5.size = {3, 4}
+    Traceback (most recent call last):
+    TypeError: size must be an integer
+
+
+    >>> sqr6 = Square(-5)
+    Traceback (most recent call last):
+    ValueError: size must be >= 0
