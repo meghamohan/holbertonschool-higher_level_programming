@@ -65,4 +65,4 @@ class Rectangle:
 
     @classmethod
     def square(self, size=0):
-         return Rectangle(size, size)
+        return Rectangle(size, size)
