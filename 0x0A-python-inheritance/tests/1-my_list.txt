@@ -39,3 +39,12 @@ Check Functionalities:
     >>> list1.append(5)
     >>> myList.print_sorted(list1)
     [0, 1, 2, 3, 4, 5, 10]
+
+    >>> list1 = myList()
+    >>> list1.print_sorted()
+    []
+
+    >>> list2 = myList([1, 2, 5, 3])
+    >>> list2.print_sorted()
+    [1, 2, 3, 5]
+
