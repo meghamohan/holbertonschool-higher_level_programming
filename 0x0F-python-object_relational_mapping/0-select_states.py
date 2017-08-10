@@ -11,7 +11,8 @@ if __name__ == "__main__":
         usr = sys.argv[1]
         pswd = sys.argv[2]
         database = sys.argv[3]
-        dbConnection = MySQLdb.connect(user=usr, passwd=pswd, db=database)
+        dbConnection = MySQLdb.connect(host="localhost", port=3306,
+                                       user=usr, passwd=pswd, db=database)
         cursr = dbConnection.cursor()
         cursr.execute("SELECT * FROM states")
         states = cursr.fetchall()
