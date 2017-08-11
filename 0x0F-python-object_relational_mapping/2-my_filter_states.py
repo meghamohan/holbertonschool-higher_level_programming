@@ -16,8 +16,8 @@ if __name__ == "__main__":
                                    db=database, port=3306,
                                    host="localhost")
     cursr = dbConnection.cursor()
-    cursr.execute("SELECT * FROM states WHERE states.name "
-                  "LIKE '%{}%' ORDER BY states.id ASC".format(stateNme))
+    cursr.execute("SELECT * FROM states WHERE name "
+                  "LIKE '{:s}' ORDER BY states.id ASC".format(stateNme))
     states = cursr.fetchall()
     for state in states:
         print(state)
