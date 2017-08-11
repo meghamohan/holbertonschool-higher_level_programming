@@ -15,8 +15,8 @@ if __name__ == "__main__":
                                    passwd=pswd,
                                    db=database)
     crsr = dbConnection.cursor()
-    crsr.execute("SELECT * FROM states WHERE name
-                 LIKE 'N%' ORDER BY states.id ASC")
+    query = "SELECT * FROM states WHERE name LIKE 'N%' ORDER BY states.id ASC"
+    crsr.execute(query)
     states = crsr.fetchall()
     if states:
         for state in states:
