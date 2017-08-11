@@ -20,7 +20,7 @@ if __name__ == "__main__":
             WHERE state_id IN (SELECT states.id
              FROM states WHERE name = %s);"""
     cursr.execute(query, (cityName,))
-    citiess = cursr.fetchall()
+    cities = cursr.fetchall()
     separator = ""
     for city in cities:
         print(separator, end="")
