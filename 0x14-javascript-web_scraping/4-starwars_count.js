@@ -17,5 +17,7 @@ request(params, function (error, response, body) {
       }
     }
   }
+  else
+    console.log(error);
   console.log(count);
 });
