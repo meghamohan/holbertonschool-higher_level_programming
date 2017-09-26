@@ -10,7 +10,7 @@ exports.Rectangle = function Rectangle (w, h) {
     }
   };
   this.rotate = function () {
-    temp = this.width;
+    const temp = this.width;
     this.width = this.height;
     this.height = temp;
   };

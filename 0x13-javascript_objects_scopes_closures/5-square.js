@@ -5,5 +5,5 @@ const rectangle = require('./4-rectangle').Rectangle;
 function Square (size) {
   rectangle.call(this, size, size);
 }
-//export the square function
+// export the square function
 exports.Square = Square;
